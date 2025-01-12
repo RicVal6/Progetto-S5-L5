@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceScam - Caricamento Documenti</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000000; /* Sfondo nero */
+      margin: 0;
+      padding: 0;
+      color: #ffffff; /* Testo bianco per contrasto */
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #222222; /* Colore scuro per il contenitore */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header span {
+      font-size: 48px;
+      color: #00b0ff; /* Colore blu vivace per il razzo */
+      display: block;
+    }
+    h1 {
+      font-size: 24px;
+      color: #ffffff; /* Testo bianco */
+      margin-top: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #cccccc; /* Grigio chiaro per il testo informativo */
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #ffffff; /* Etichette bianche */
+    }
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #444444; /* Bordo scuro per il campo di input */
+      border-radius: 4px;
+      background-color: #333333; /* Sfondo scuro per il campo di input */
+      color: #ffffff; /* Testo bianco all'interno del campo */
+    }
+    input[type="file"]:hover {
+      border-color: #00b0ff; /* Colore blu al passaggio del mouse */
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00b0ff; /* Colore blu per il pulsante */
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #008acb; /* Colore blu più scuro al passaggio del mouse */
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888888; /* Testo grigio per il footer */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <!-- Logo come razzo con emoji -->
+      <span>🚀</span>
+      <h1>Caricamento Documenti per SpaceScam</h1>
+      <p>Per favore, carica il file PDF richiesto per completare la tua attività.</p>
+    </header>
+
+    <form action="http://falsosito.com/process_form" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="pdf-file">Seleziona il PDF da caricare</label>
+        <input type="file" id="pdf-file" name="pdf-file" accept=".pdf" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Carica il documento</button>
+      </div>
+    </form>
+
+    <div class="footer">
+      <p>Se hai problemi con il caricamento, contatta l'assistenza a supporto@spacescam.com.</p>
+    </div>
+  </div>
+
+</body>
+</html>
