@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Phishing - Simulazione Casella Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .email-client {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2d2d2d;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .main {
+            flex-grow: 1;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .email-header {
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .email-header strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .email-body {
+            font-size: 14px;
+        }
+        .email-body p {
+            margin-bottom: 15px;
+        }
+        .email-body ul {
+            margin-left: 20px;
+        }
+        .email-body a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .email-body a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #f9f9f9;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-client">
+        <div class="sidebar">
+            <h2>Casella Posta</h2>
+            <ul>
+                <li><a href="#">Posta in arrivo</a></li>
+                <li><a href="#">Inviati</a></li>
+                <li><a href="#">Bozze</a></li>
+                <li><a href="#">Spam</a></li>
+                <li><a href="#">Cestino</a></li>
+            </ul>
+            <p>© 2025 MailSim</p>
+        </div>
+        <div class="main">
+            <div class="header">Posta in arrivo</div>
+            <div class="content">
+                <div class="email-header">
+                    <strong>Oggetto:</strong> Urgente - Dati Ricerca Chimica dei Materiali 2024<br>
+                    <strong>Mittente:</strong> j.howard@spacescam-dept.com<br>
+                    <strong>Data:</strong> 12 gennaio 2025
+                </div>
+                <div class="email-body">
+                    <p>Gentile Lucas,</p>
+
+                    <p>Spero tutto bene. Ti scrivo per richiedere la tua assistenza in merito alla revisione dei risultati delle ricerche del <strong>Dipartimento di Chimica dei Materiali</strong> svolte nel 2024. Questo materiale è fondamentale per la nostra <strong>riunione di inizio anno con i partner</strong>, prevista per la prossima settimana.</p>
+
+                    <p>Ti preghiamo di caricare i seguenti dati tramite il nostro portale sicuro <strong>entro oggi</strong>:</p>
+                    <ul>
+                        <li>Risultati delle ricerche principali condotte nel 2024.</li>
+                        <li>Descrizione dei nuovi materiali sviluppati, incluse le loro proprietà chimiche.</li>
+                        <li>Eventuali rapporti tecnici o dati sperimentali di rilievo.</li>
+                    </ul>
+
+                    <p>Puoi caricare i dati al seguente link sicuro: <a href="#" target="_blank">Carica Dati Ricerca 2024</a></p>
+
+                    <p>Ti ringrazio per la tua <strong>tempestività</strong>. Questo messaggio è cruciale per finalizzare i documenti che verranno presentati durante la riunione.</p>
+
+                    <p>Grazie per la tua collaborazione. Se hai domande, non esitare a contattarmi.</p>
+
+                    <p>Cordiali saluti,<br>
+                    <strong>James Howard</strong><br>
+                    Manager Operativo - SpaceScam Inc.</p>
+                </div>
+            </div>
+            <div class="footer">Powered by MailSim - Simulazione Casella Email</div>
+        </div>
+    </div>
+</body>
+</html>
